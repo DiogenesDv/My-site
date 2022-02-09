@@ -1,0 +1,106 @@
+body{
+    background: rgb(48, 43, 43)
+}
+*{
+    box-sizing: border-box;
+}
+/***Area cabeçalho*/
+header{
+    background: rgb(48, 43, 43) url(../imagens/front_end_width1800px.png) no-repeat center;
+    text-align: center;
+   
+}
+/***Area menu de navegação***/
+
+nav{
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    overflow: hidden;
+    background: rgb(46, 40, 40);
+    position: sticky;
+    top: 0px;   
+}
+a{
+
+    color: #f2f2f2;
+    text-transform: uppercase;
+    text-decoration: none;   
+    padding-left: 18px;
+    padding-right: 18px;   
+}
+a:hover{
+    background: rgba(20, 255, 59, 0.549);
+}
+/***************************************/
+
+/*********CORPO DO SITE********************/
+h1{
+    color: #fcbebe;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid #86521a2c;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+article{
+    width: 80%;
+    /*float: left;*/
+    margin: 0 auto;
+}
+
+section{
+    border: 2px solid rgb(20, 255, 59);
+}
+.postagem
+{
+    width: 100%;
+    margin: 0 auto;
+	padding: 5px 10px 1px 10px;
+	color: rgba(90, 243, 141, 0.741);
+    font-size: 1em;
+}
+.imagem
+{
+    margin-top: 8px;
+    margin-right: 5px;
+	float: left;
+	width: 100px;
+}
+
+.data_postado
+{
+    color: aliceblue;
+	border-left: 5px solid #a0a0a0;
+	padding-left: 5px;
+    padding-bottom: 5px;
+	display: block;
+	margin-top: 10px;
+    font-size: 12px;
+}
+.titulo{
+    text-decoration: underline;
+}
+
+/******************************************/
+
+/*******LATERAL*****************
+.lateral{
+    width: 35%;
+    float: right;
+    background: rgb(167, 223, 111);
+}
+*******************************/
+
+/*****RODAPE**************************/
+footer{
+    color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    padding: 0.1px;
+    background:rgb(48, 43, 43);
+}
+/*************************************/
+
