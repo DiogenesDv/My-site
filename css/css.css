@@ -8,7 +8,9 @@ body{
 header{
     background: rgb(48, 43, 43) url(../imagens/front_end_width1800px.png) no-repeat center;
     text-align: center;
-   
+    line-height: 10px;
+    min-width: auto;
+    max-width: none; 
 }
 /***Area menu de navegação***/
 
@@ -55,10 +57,11 @@ article{
     width: 80%;
     /*float: left;*/
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 section{
-    border: 2px solid rgb(20, 255, 59);
+    /*border: 2px solid rgb(20, 255, 59);*/
 }
 .postagem
 {
@@ -68,15 +71,25 @@ section{
 	color: rgba(90, 243, 141, 0.741);
     font-size: 1.5em;
 }
+/*
 .imagem
 {
-    margin-top: 8px;
-    margin-right: 5px;
-	float: left;
-	width: 130px;
+    border: 3px solid red;
+	width: 50%;
+    overflow: hidden;/*esconde parte da imgem na div*
+    height: 150px;
+}
+*/
+img.imagensFrontEnd{
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    
 }
 .imagemMapa{
     margin: 0 auto;
+    padding: 10px 10px;
 	width: 70%;
     display: flex;
 }
@@ -85,6 +98,16 @@ section{
     display: flex;
     float: left;
     padding-right: 5px;
+}
+.titulo{
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.conteudo{
+    margin-top: -25px;
+    line-height: 25px;
+    text-align: justify;
 }
 .data_postado
 {
@@ -112,13 +135,15 @@ section{
 
 /*****RODAPE**************************/
 footer{
+   /* border-top: 2px solid rgba(20, 255, 59, 0.6);*/
+   background-image: linear-gradient(to left,  rgb(20, 255, 59), rgb(20, 255, 59, 0.1));
     color: #f2f2f2;
     text-align: center;
-    margin: 0 auto;
-    padding: 0.1px;
-    background:rgb(48, 43, 43);
+    margin: 0 30% 0 30%;
+    /*background:rgb(48, 43, 43);*/
 }
 .iconeLink{
+    padding-top: 3px;
     width: 14px;
 }
 /*************************************/
