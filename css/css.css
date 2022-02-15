@@ -15,14 +15,17 @@ header{
 /***Area menu de navegação***/
 
 nav{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
     text-shadow: 2px 3px 2px rgb(0, 0, 0);
     overflow: hidden;
     background: rgb(46, 40, 40);
     position: sticky;
-    top: 0px;   
+    top: 0px;/*O que faz grudar no top sem sumir da tela*/   
 }
 a{
     color: #f2f2f2;
@@ -44,6 +47,10 @@ a:hover{
 /***************************************/
 
 /*********CORPO DO SITE********************/
+h2{
+    /*border: 2px solid rgb(255, 255, 255);*/
+    padding-bottom: 20px;
+}
 h1{
     color: #fcbebe;
     text-align: center;
@@ -63,13 +70,21 @@ article{
 section{
     /*border: 2px solid rgb(20, 255, 59);*/
 }
+.containerFlex{
+    /*border: 2px solid rgb(255, 255, 255);*/
+    display: flex;/*PROPRIEDADE para usar as demais abaixo*/
+    flex-direction: row;/*Alinha em linha*/
+    flex-wrap: wrap;/*e os Itens nao der na tela, ele colocar em colunas*/
+    justify-content: center;/*Alinha os itens no centro ao ficarem em colunas*/
+}
 .postagem
 {
-    width: 100%;
-    margin: 0 auto;
+    /*border: 2px solid red;*/
+    width: 900px;
 	padding: 5px 10px 1px 10px;
 	color: rgba(90, 243, 141, 0.741);
     font-size: 1.5em;
+    margin: auto;
 }
 /*
 .imagem
@@ -79,7 +94,7 @@ section{
     overflow: hidden;/*esconde parte da imgem na div*
     height: 150px;
 }
-*/
+
 img.imagensFrontEnd{
     width: 25%;
     float: left;
@@ -87,7 +102,17 @@ img.imagensFrontEnd{
     padding-bottom: 20px;
     
 }
-.imagemMapa{
+*/
+.divImagem{
+    margin: auto;
+}
+.imagensFrontEnd{
+    /*border: 3px solid red;*/
+    width: 350px;
+    
+}
+
+.imagemMapaECarreira{
     margin: 0 auto;
     padding: 10px 10px;
 	width: 70%;
